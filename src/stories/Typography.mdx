@@ -1,0 +1,51 @@
+import { Meta, Typeset } from "@storybook/addon-docs/blocks";
+
+<Meta title="Style Guide/Typography" />
+
+export const typography = {
+  type: {
+    primary: '"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  weight: {
+    bold: "700",
+    extrabold: "800",
+    black: "900",
+  },
+  size: {
+    s12: 12,
+    s14: 14,
+    s16: 16,
+    s18: 18,
+    s19: 19,
+    s20: 20,
+    s22: 22,
+    s23: 23,
+    s25: 25,
+    s28: 28,
+    s36: 36,
+    s48: 48,
+  },
+};
+
+export const SampleText = "Fauna Design System";
+
+# Typography
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.s12),
+    Number(typography.size.s14),
+    Number(typography.size.s16),
+    Number(typography.size.s18),
+    Number(typography.size.s19),
+    Number(typography.size.s20),
+    Number(typography.size.s23),
+    Number(typography.size.s25),
+    Number(typography.size.s28),
+    Number(typography.size.s36),
+    Number(typography.size.s48),
+  ]}
+  fontWeight={typography.weight.black}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
